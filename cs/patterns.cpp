@@ -4,7 +4,16 @@ using namespace std;
 #define ll long long
 
 
+
 // inverted pyramid star
+/*
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    *    
+*/
+
 void sol1(int n) {
   for(int i = 0; i < n; i++) {
     for (int j = 0; j < i; j++) {
@@ -19,6 +28,26 @@ void sol1(int n) {
   }
 }
 
+/*----------------------------------------------------------------*/
+
+// half diamond pattern
+/*
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* * 
+* 
+*/
+
+void sol2(int n) {
+  
+}
+
+
 int main() {
-  sol1(5);
+  // sol1(5);
 }
