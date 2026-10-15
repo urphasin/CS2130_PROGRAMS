@@ -4,7 +4,10 @@ using namespace std;
 #define ll long long
 
 struct ListNode {
+  int val;
+  ListNode* next;
 
+  ListNode(int x) : val(x), next(nullptr) {}
 };
 
 int main() {
