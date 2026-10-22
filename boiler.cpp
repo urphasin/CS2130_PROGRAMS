@@ -7,7 +7,9 @@ using namespace std;
 
 int main() {
 
-  
+  vector<int> a = {7, 2, 9, 4, 3, 8, 5};
+  string s = "aabbabbbcdccabc";
+
 }
 
 // g++ 0.cpp -o ans && ./ans && rm -rf ./ans
