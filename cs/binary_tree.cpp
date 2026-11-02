@@ -6,5 +6,7 @@ struct BinaryNode {
   struct BinaryNode *left;
   struct BinaryNode *right;
 
-  int val;
+  int value;
+
+  BinaryNode(int val) : value(val), left(nullptr), right(nullptr) {}
 };
