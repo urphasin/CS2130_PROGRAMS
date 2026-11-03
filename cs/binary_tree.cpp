@@ -41,7 +41,7 @@ int main(){
   BinaryNode* f = new BinaryNode(6);
   BinaryNode* g = new BinaryNode(7);
 
-  // Connections
+  // Connect edges
   a->left  = b; a->right = c;
   b->right = e;
   c->left  = d;
