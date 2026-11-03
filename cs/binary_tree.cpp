@@ -57,3 +57,5 @@ int main(){
   // delete heap memory
   delete a; delete b; delete c; delete d; delete e; delete f; delete g;
 }
+
+// g++ 0.cpp -o ans && ./ans && rm -rf ./ans
