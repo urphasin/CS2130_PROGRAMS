@@ -13,13 +13,22 @@ struct BinaryNode {
 
 // PreOrder Traversal
 void PreOrder(struct BinaryNode *root) {
-
+    if (root == nullptr) return;
+    cout << root->value << " ";
+    PreOrder(root->left);
+    PreOrder(root->right);
 }
 void InOrder(struct BinaryNode *root) {
-
+  if (root == nullptr) return;
+  InOrder(root->left);
+  cout << root->value << " ";
+  InOrder(root->right);
 }
 void PostOrder(struct BinaryNode *root) {
-
+  if (root == nullptr) return;
+  PostOrder(root->left);
+  PostOrder(root->right);
+  cout << root->value << " ";
 }
 
 int main(){
@@ -41,9 +50,9 @@ int main(){
 
 
   // call functions;
-  PreOrder(a);
-  InOrder(a);
-  PostOrder(a);
+  cout << "PreOrder: " <<  "\n"; PreOrder(a);  cout << endl;
+  cout << "InOrder: " <<   "\n"; InOrder(a);   cout << endl;
+  cout << "PostOrder: " << "\n"; PostOrder(a); cout << endl;
 
   // delete heap memory
   delete a; delete b; delete c; delete d; delete e; delete f; delete g;
