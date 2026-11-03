@@ -11,6 +11,16 @@ struct BinaryNode {
   BinaryNode(int val) : value(val), left(nullptr), right(nullptr) {}
 };
 
+// PreOrder Traversal
+void PreOrder(struct BinaryNode *root) {
+
+}
+void InOrder(struct BinaryNode *root) {
+
+}
+void PostOrder(struct BinaryNode *root) {
+
+}
 
 int main(){
   // Create nodes a-g
@@ -28,4 +38,13 @@ int main(){
   c->left  = d;
   d->right = f;
   e->left  = g;
+
+
+  // call functions;
+  PreOrder(a);
+  InOrder(a);
+  PostOrder(a);
+
+  // delete heap memory
+  delete a; delete b; delete c; delete d; delete e; delete f; delete g;
 }
