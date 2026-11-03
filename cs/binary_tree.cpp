@@ -24,10 +24,11 @@ void InOrder(struct BinaryNode *root) {
   cout << root->value << " ";
   InOrder(root->right);
 }
-void PostOrder(struct BinaryNode *root) {
+void PostOrder(struct BinaryNode *root, int &x) {
+  x++;
   if (root == nullptr) return;
-  PostOrder(root->left);
-  PostOrder(root->right);
+  PostOrder(root->left, x);
+  PostOrder(root->right, x);
   cout << root->value << " ";
 }
 
@@ -48,14 +49,18 @@ int main(){
   d->right = f;
   e->left  = g;
 
+  // integer reference
+  int x = 0;
 
   // call functions;
   cout << "PreOrder: " <<  "\n"; PreOrder(a);  cout << endl;
   cout << "InOrder: " <<   "\n"; InOrder(a);   cout << endl;
-  cout << "PostOrder: " << "\n"; PostOrder(a); cout << endl;
+  cout << "PostOrder: " << "\n"; PostOrder(a, x); cout << endl;
 
   // delete heap memory
   delete a; delete b; delete c; delete d; delete e; delete f; delete g;
+
+  cout << "Total Nodes deleted: " << x << endl;
 }
 
 // g++ 0.cpp -o ans && ./ans && rm -rf ./ans
