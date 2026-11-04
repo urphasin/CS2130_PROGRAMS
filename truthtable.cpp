@@ -9,7 +9,7 @@ d = w
 */
 
 int output(int a , int b, int c, int d) {
-  int ans = (c && !d) || (!b && d) || (a && !b && !c);
+  int ans = (c && !d) || (!b && !d) || (a && !b && !c);
   return ans;
 }
 
