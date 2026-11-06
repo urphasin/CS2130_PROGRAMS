@@ -16,3 +16,5 @@ int main() {
 
   printUnorderedMap(um);
 }
+
+// g++ UnorderedMap.cpp -o ans && ./ans && rm -rf ./ans
