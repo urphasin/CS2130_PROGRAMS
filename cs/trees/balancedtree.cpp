@@ -14,13 +14,19 @@ struct BinaryNode {
   BinaryNode(T value) : data(value), left(nullptr), right(nullptr) {}
 };
 
-
+template <typename T>
 class BinaryTree {
   private:
-    struct BinaryNode* root;
+    struct BinaryNode<T>* root;
   
   public:
-  ~BinaryTree() {}
+  // Constructors
+  BinaryTree(BinaryNode<T>* root) : root(root) {}
+  BinaryTree() : root(nullptr) {}
+  
+  ~BinaryTree() {
+    // Destructor goes here
+  }
 };
 
 void sol1() {
