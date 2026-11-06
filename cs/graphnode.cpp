@@ -40,6 +40,10 @@ void addEdge(unordered_map<T, vector<T>>& um, const T& s, const T& u) {
 
 int main() {
 
-  
-  
+  Graph<string> g1;
+  g1.addEdge("O", "B");
+  g1.addEdge("C", "0");
+  g1.addEdge("F", "C");
+
+  g1.printGraph();
 }
