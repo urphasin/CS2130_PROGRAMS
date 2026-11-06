@@ -10,7 +10,8 @@ void print1DTensor(vector<T> tensor) {
 }
 
 int main() {
-  print1DTensor(vector<int> {1,2,3, 4, 5, 21});
+  vector<double> T {2.0, 4.0, 6.0, 8.0};
+  print1DTensor(T);
 }
 
 // g++ tensor.cpp -o ans && ./ans && rm -rf ./ans 
