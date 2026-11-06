@@ -42,8 +42,10 @@ int main() {
 
   Graph<string> g1;
   g1.addEdge("O", "B");
-  g1.addEdge("C", "0");
+  g1.addEdge("C", "O");
   g1.addEdge("F", "C");
 
   g1.printGraph();
 }
+
+// g++ graphnode.cpp -o ans && ./ans && rm -rf ./ans
