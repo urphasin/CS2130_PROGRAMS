@@ -63,4 +63,4 @@ int main(){
   cout << "Total Nodes deleted: " << x << endl;
 }
 
-// g++ 0.cpp -o ans && ./ans && rm -rf ./ans
+// g++ binary_node.cpp -o ans && ./ans && rm -rf ./ans
