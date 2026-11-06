@@ -47,12 +47,14 @@ void PreOrder(struct BinaryNode *root) {
     PreOrder(root->left);
     PreOrder(root->right);
 }
+
 void InOrder(struct BinaryNode *root) {
   if (root == nullptr) return;
   InOrder(root->left);
   cout << root->value << " ";
   InOrder(root->right);
 }
+
 void PostOrder(struct BinaryNode *root, int &x) {
   x++;
   if (root == nullptr) return;

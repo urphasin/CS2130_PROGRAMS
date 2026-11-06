@@ -6,7 +6,10 @@ using namespace std;
 
 
 void sol1() {
-  // Raw BinaryNode Pointer
+
+}
+int main() {
+    // Raw BinaryNode Pointer
   BinaryNode<int> *root = new BinaryNode<int>(1);
 
   BinaryNode<int> *node2 = new BinaryNode<int>(2);
@@ -20,9 +23,12 @@ void sol1() {
 
   node2->left = node4;
   node2->right = node5;
-}
-int main() {
 
+  
+  BinaryTree<int> tree1(root);
+  tree1.PreOrder();
+  tree1.InOrder();
+  tree1.PostOrder();
 }
 
-// g++ 0.cpp -o ans && ./ans && rm -rf ./ans
+// g++ balancedtree.cpp -o ans && ./ans && rm -rf ./ans
