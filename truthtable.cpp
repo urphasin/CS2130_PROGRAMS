@@ -25,3 +25,5 @@ int main() {
     }
   }
 }
+
+// g++ truthtable.cpp -o ans && ./ans && rm -rf ./ans
