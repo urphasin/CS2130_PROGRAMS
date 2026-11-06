@@ -4,12 +4,11 @@
 
 template <typename T>
 class Graph {
-  public:
+public:
   Graph() {}
 
-  private:
-  unordered_map<int, vector<int>> adjL;
-  void addVertex(T vertex) {}
+private:
+  unordered_map<T, vector<T>> adjL;
 };
 
 
