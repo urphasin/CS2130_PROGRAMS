@@ -8,8 +8,8 @@ class Graph {
   Graph() {}
 
   private:
+  unordered_map<int, vector<int>> adjL;
   void addVertex(T vertex) {}
-  
 };
 
 
