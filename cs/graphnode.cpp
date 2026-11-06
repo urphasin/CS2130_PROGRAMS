@@ -37,7 +37,6 @@ void addEdge(unordered_map<T, vector<T>>& um, const T& s, const T& u) {
   um[u].push_back(s);
 }
 
-
 int main() {
 
   Graph<string> g1;
