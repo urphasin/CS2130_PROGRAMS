@@ -9,6 +9,15 @@ void print1DTensor(vector<T> tensor) {
   }
 }
 
+template <typename T>
+class Tensor1D {
+  private:
+    vector<T> data;
+  public:
+  Tensor1D<T>(vector<T> values) : data(values) {}
+  
+};
+
 int main() {
   vector<double> T {2.0, 4.0, 6.0, 8.0};
   print1DTensor(T);
