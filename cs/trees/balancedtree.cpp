@@ -5,8 +5,8 @@ using namespace std;
 
 template <typename T>
 struct BinaryNode {
-  struct BinaryNode* left;
-  struct BinaryNode* right;
+  struct BinaryNode<T>* left;
+  struct BinaryNod<T>* right;
 
   T data;
 
@@ -20,7 +20,7 @@ class BinaryTree {
     struct BinaryNode* root;
   
   public:
-
+  ~BinaryTree() {}
 };
 
 void sol1() {
