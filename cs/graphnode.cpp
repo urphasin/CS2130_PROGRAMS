@@ -5,11 +5,30 @@ using namespace std;
 
 template <typename T>
 class Graph {
-public:
-  Graph() {}
-
 private:
   unordered_map<T, vector<T>> adjL;
+
+public:
+  // Constructors
+  Graph() {}
+
+  // Methods
+  void addEdge(const T &s, const T &u) {
+    adjL[s].push_back(u);
+    adjL[u].push_back(s);
+  }
+
+  void printGraph() {
+    for (const auto &[vertex, neighbors] : adjL) {
+      cout << vertex << " : ";
+
+      for (const T &neighbor : neighbors) {
+        cout << neighbor << ", ";
+      }
+      cout << "\n";
+    }
+  }
+
 };
 
 template <typename T>
