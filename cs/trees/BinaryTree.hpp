@@ -45,14 +45,17 @@ public:
   // Traversal methods
   void PreOrder() {
     PreOrder(root);
+    cout << endl;
   }
 
   void InOrder() {
     InOrder(root);
+    cout << endl;
   }
 
   void PostOrder() {
     PostOrder(root);
+    cout << endl;
   }
 
   // Delete node method
@@ -67,5 +70,6 @@ public:
   ~BinaryTree() {
     // Destructor goes here
     destroy(root);
+    cout << endl;
   }
 };
