@@ -11,7 +11,7 @@ struct BinaryNode {
   T data;
 
   // Constructors
-  BinaryNode(T value) : data(value), left(nullptr), right(nullptr) {};
+  BinaryNode(T value) : data(value), left(nullptr), right(nullptr) {}
 };
 
 
@@ -20,13 +20,26 @@ class BinaryTree {
     struct BinaryNode* root;
   
   public:
-    
+
 };
 
-int main() {
+void sol1() {
+  // Raw BinaryNode Pointer
+  BinaryNode<int> *root = new BinaryNode<int>(1);
 
-  vector<int> a = {7, 2, 9, 4, 3, 8, 5};
-  string s = "abcabcabcdabcabcabcd";
+  BinaryNode<int> *node2 = new BinaryNode<int>(2);
+  BinaryNode<int> *node3 = new BinaryNode<int>(3);
+  BinaryNode<int> *node4 = new BinaryNode<int>(4);
+  BinaryNode<int> *node5 = new BinaryNode<int>(5);
+
+  // Connect nodes
+  root->left = node2;
+  root->right = node3;
+
+  node2->left = node4;
+  node2->right = node5;
+}
+int main() {
 
 }
 

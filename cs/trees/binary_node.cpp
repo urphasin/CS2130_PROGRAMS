@@ -11,6 +11,35 @@ struct BinaryNode {
   BinaryNode(int val) : value(val), left(nullptr), right(nullptr) {}
 };
 
+template <typename T>
+struct BinaryNode2 {
+  unique_ptr<BinaryNode2<T>> left;
+  unique_ptr<BinaryNode2<T>> right;
+
+  T data;
+
+  // Constructor
+  BinaryNode2(T val) : data(val), left(nullptr), right(nullptr) {}
+};
+
+
+// BinaryNode with smart pointer
+void sol2() {
+  // Smart BinaryNode Pointers
+  auto root = make_unique<BinaryNode2<int>>(1);
+
+  unique_ptr<BinaryNode2<int>> node2 = make_unique<BinaryNode2<int>>(2);
+  auto node3 = make_unique<BinaryNode2<int>>(3);
+  auto node4 = make_unique<BinaryNode2<int>>(4);
+  auto node5 = make_unique<BinaryNode2<int>>(5);
+
+  // Connect nodes
+  root->left  = move(node2);
+  root->right = move(node3);
+}
+
+
+
 // PreOrder Traversal
 void PreOrder(struct BinaryNode *root) {
     if (root == nullptr) return;
