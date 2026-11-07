@@ -6,13 +6,7 @@ using namespace std;
 
 template <typename T>
 int heightOfTree(BinaryNode<T>* root) {
-  if (root == nullptr)
-    return -1;
-
-  int leftHeight = heightOfTree(root->left);
-  int rightHeight = heightOfTree(root->right);
-
-  return 1 + max(leftHeight, rightHeight);
+ 
 }
 
 int main() {
