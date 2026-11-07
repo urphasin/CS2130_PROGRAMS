@@ -5,8 +5,14 @@ using namespace std;
 #define ll long long
 
 template <typename T>
-int heightOfTree(BinaryNode<T>* node) {
+int heightOfTree(BinaryNode<T>* root) {
+  if (root == nullptr)
+    return -1;
 
+  int leftHeight = height(root->left);
+  int rightHeight = height(root->right);
+
+  return 1 + max(leftHeight, rightHeight);
 }
 
 int main() {
