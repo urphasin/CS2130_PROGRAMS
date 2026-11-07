@@ -71,7 +71,7 @@ public:
   ~BinaryTree() {
     // Destructor goes here
     destroy(root);
-    cout << endl;
+    cout << "Destructor ran" << endl;
   }
 };
 

@@ -70,18 +70,14 @@ int main(){
   d->right = f;
   e->left  = g;
 
+  BinaryTree<int> treeA(a);
+  treeA.InOrder();
+  
   // integer reference
   int x = 0;
 
-  // call functions;
-  cout << "PreOrder: " <<  "\n"; PreOrder(a);  cout << endl;
-  cout << "InOrder: " <<   "\n"; InOrder(a);   cout << endl;
-  cout << "PostOrder: " << "\n"; PostOrder(a, x); cout << endl;
-
   // delete heap memory
   delete a; delete b; delete c; delete d; delete e; delete f; delete g;
-
-  cout << "Total Nodes deleted: " << x << endl;
 }
 
 // g++ binary_node.cpp -o ans && ./ans && rm -rf ./ans
