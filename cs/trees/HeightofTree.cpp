@@ -9,8 +9,8 @@ int heightOfTree(BinaryNode<T>* root) {
   if (root == nullptr)
     return -1;
 
-  int leftHeight = height(root->left);
-  int rightHeight = height(root->right);
+  int leftHeight = heightOfTree(root->left);
+  int rightHeight = heightOfTree(root->right);
 
   return 1 + max(leftHeight, rightHeight);
 }
