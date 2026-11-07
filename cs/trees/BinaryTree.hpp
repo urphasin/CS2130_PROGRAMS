@@ -80,6 +80,10 @@ public:
     delete node;
   }
 
+  static BinaryNode<T>* LCA(BinaryNode<T>* root, BinaryNode<T>* p, BinaryNode<T>* q) {
+    
+  }
+
   ~BinaryTree() {
     // Destructor goes here
     destroy(root);

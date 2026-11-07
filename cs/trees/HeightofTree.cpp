@@ -15,6 +15,8 @@ int heightOfTree(BinaryNode<T>* root) {
   return 1 + max(leftHeight, rightHeight);
 }
 
+
+
 int main() {
     // Raw BinaryNode Pointer
   BinaryNode<int> *root = new BinaryNode<int>(1);
