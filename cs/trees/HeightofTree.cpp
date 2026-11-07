@@ -8,6 +8,7 @@ template <typename T>
 int heightOfTree(BinaryNode<T>* node) {
 
 }
+
 int main() {
     // Raw BinaryNode Pointer
   BinaryNode<int> *root = new BinaryNode<int>(1);
