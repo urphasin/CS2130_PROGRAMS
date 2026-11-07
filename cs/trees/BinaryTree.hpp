@@ -5,8 +5,8 @@ using std::endl;
 
 template <typename T>
 struct BinaryNode {
-  struct BinaryNode<T>* left;
-  struct BinaryNode<T>* right;
+  BinaryNode<T>* left;
+  BinaryNode<T>* right;
 
   T data;
 

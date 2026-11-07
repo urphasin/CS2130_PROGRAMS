@@ -1,15 +1,7 @@
 #include <bits/stdc++.h>
+#include <BinaryTree.hpp>
 
 using namespace std;
-
-struct BinaryNode {
-  struct BinaryNode *left;
-  struct BinaryNode *right;
-
-  int value;
-
-  BinaryNode(int val) : value(val), left(nullptr), right(nullptr) {}
-};
 
 template <typename T>
 struct BinaryNode2 {
@@ -23,9 +15,8 @@ struct BinaryNode2 {
 };
 
 
-// BinaryNode with smart pointer
+// Smart BinaryNode Pointers
 void sol2() {
-  // Smart BinaryNode Pointers
   auto root = make_unique<BinaryNode2<int>>(1);
 
   unique_ptr<BinaryNode2<int>> node2 = make_unique<BinaryNode2<int>>(2);
@@ -39,39 +30,38 @@ void sol2() {
 }
 
 
-
 // PreOrder Traversal
-void PreOrder(struct BinaryNode *root) {
+void PreOrder(struct BinaryNode<int> *root) {
     if (root == nullptr) return;
-    cout << root->value << " ";
+    cout << root->data << " ";
     PreOrder(root->left);
     PreOrder(root->right);
 }
 
-void InOrder(struct BinaryNode *root) {
+void InOrder(struct BinaryNode<int> *root) {
   if (root == nullptr) return;
   InOrder(root->left);
-  cout << root->value << " ";
+  cout << root->data << " ";
   InOrder(root->right);
 }
 
-void PostOrder(struct BinaryNode *root, int &x) {
+void PostOrder(struct BinaryNode<int> *root, int &x) {
   x++;
   if (root == nullptr) return;
   PostOrder(root->left, x);
   PostOrder(root->right, x);
-  cout << root->value << " ";
+  cout << root->data << " ";
 }
 
 int main(){
-  // Create nodes a-g
-  BinaryNode* a = new BinaryNode(1);
-  BinaryNode* b = new BinaryNode(2);
-  BinaryNode* c = new BinaryNode(3);
-  BinaryNode* d = new BinaryNode(4);
-  BinaryNode* e = new BinaryNode(5);
-  BinaryNode* f = new BinaryNode(6);
-  BinaryNode* g = new BinaryNode(7);
+  // Create nodes 1-7
+  BinaryNode<int>* a = new BinaryNode<int>(1);
+  BinaryNode<int>* b = new BinaryNode<int>(2);
+  BinaryNode<int>* c = new BinaryNode<int>(3);
+  BinaryNode<int>* d = new BinaryNode<int>(4);
+  BinaryNode<int>* e = new BinaryNode<int>(5);
+  BinaryNode<int>* f = new BinaryNode<int>(6);
+  BinaryNode<int>* g = new BinaryNode<int>(7);
 
   // Connect edges
   a->left  = b; a->right = c;
