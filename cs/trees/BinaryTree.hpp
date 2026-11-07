@@ -15,6 +15,8 @@ struct BinaryNode {
   // Constructors
   BinaryNode(T value) : data(value), left(nullptr), right(nullptr) {}
 };
+
+
 template <typename T>
 class BinaryTree {
 private:
