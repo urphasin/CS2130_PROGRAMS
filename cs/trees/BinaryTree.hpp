@@ -80,7 +80,7 @@ public:
     delete node;
   }
 
-  static BinaryNode<T>* LCA(BinaryNode<T>* root, BinaryNode<T>* p, BinaryNode<T>* q) {
+  static BinaryNode<T>* LowestCommonAncestor(BinaryNode<T>* root, BinaryNode<T>* p, BinaryNode<T>* q) {
     
   }
 
