@@ -4,8 +4,8 @@ using namespace std;
 
 #define ll long long
 
-
-void sol1() {
+template <typename T>
+void heightOfTree(BinaryNode<int>* node) {
 
 }
 int main() {
