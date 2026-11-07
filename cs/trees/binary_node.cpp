@@ -3,32 +3,6 @@
 
 using namespace std;
 
-template <typename T>
-struct BinaryNode2 {
-  unique_ptr<BinaryNode2<T>> left;
-  unique_ptr<BinaryNode2<T>> right;
-
-  T data;
-
-  // Constructor
-  BinaryNode2(T val) : data(val), left(nullptr), right(nullptr) {}
-};
-
-
-// Smart BinaryNode Pointers
-void sol2() {
-  auto root = make_unique<BinaryNode2<int>>(1);
-
-  unique_ptr<BinaryNode2<int>> node2 = make_unique<BinaryNode2<int>>(2);
-  auto node3 = make_unique<BinaryNode2<int>>(3);
-  auto node4 = make_unique<BinaryNode2<int>>(4);
-  auto node5 = make_unique<BinaryNode2<int>>(5);
-
-  // Connect nodes
-  root->left  = move(node2);
-  root->right = move(node3);
-}
-
 int main(){
   // Create nodes 1-7
   BinaryNode<int>* a = new BinaryNode<int>(1);
