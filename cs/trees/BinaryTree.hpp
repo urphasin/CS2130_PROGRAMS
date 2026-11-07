@@ -39,7 +39,9 @@ private:
     cout << node->data << " ";
   }
 
-  int heightOfTree(BinaryNode<T> *node) {}
+  int heightOfTree(BinaryNode<T> *node) {
+    return -1;
+  }
 
 public:
   // Constructors
