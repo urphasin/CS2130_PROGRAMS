@@ -81,7 +81,7 @@ public:
   }
 
   static BinaryNode<T>* LowestCommonAncestor(BinaryNode<T>* root, BinaryNode<T>* p, BinaryNode<T>* q) {
-    
+    return root;
   }
 
   ~BinaryTree() {
