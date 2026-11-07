@@ -19,7 +19,7 @@ template <typename T>
 class BinaryTree {
 private:
   struct BinaryNode<T> *root;
-  
+
   void PreOrder(BinaryNode<T> *node) {
     if (node == nullptr) return;
     cout << node->data << " ";
@@ -74,3 +74,4 @@ public:
     cout << endl;
   }
 };
+
