@@ -29,30 +29,6 @@ void sol2() {
   root->right = move(node3);
 }
 
-
-// PreOrder Traversal
-void PreOrder(struct BinaryNode<int> *root) {
-    if (root == nullptr) return;
-    cout << root->data << " ";
-    PreOrder(root->left);
-    PreOrder(root->right);
-}
-
-void InOrder(struct BinaryNode<int> *root) {
-  if (root == nullptr) return;
-  InOrder(root->left);
-  cout << root->data << " ";
-  InOrder(root->right);
-}
-
-void PostOrder(struct BinaryNode<int> *root, int &x) {
-  x++;
-  if (root == nullptr) return;
-  PostOrder(root->left, x);
-  PostOrder(root->right, x);
-  cout << root->data << " ";
-}
-
 int main(){
   // Create nodes 1-7
   BinaryNode<int>* a = new BinaryNode<int>(1);
