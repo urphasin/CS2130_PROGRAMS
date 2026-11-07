@@ -5,7 +5,7 @@ using namespace std;
 #define ll long long
 
 template <typename T>
-void heightOfTree(BinaryNode<int>* node) {
+int heightOfTree(BinaryNode<T>* node) {
 
 }
 int main() {
@@ -36,9 +36,7 @@ int main() {
 
   
   BinaryTree<int> tree1(root);
-  tree1.PreOrder();
-  tree1.InOrder();
-  tree1.PostOrder();
+  cout << "Height of Tree1: " << heightOfTree(root) << endl;
 }
 
 // g++ HeightofTree.cpp -o ans && ./ans && rm -rf ./ans
