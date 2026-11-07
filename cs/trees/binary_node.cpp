@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <BinaryTree.hpp>
+#include "BinaryTree.hpp"
 
 using namespace std;
 
@@ -72,12 +72,11 @@ int main(){
 
   BinaryTree<int> treeA(a);
   treeA.InOrder();
+  treeA.PreOrder();
+  treeA.PostOrder();
   
   // integer reference
   int x = 0;
-
-  // delete heap memory
-  delete a; delete b; delete c; delete d; delete e; delete f; delete g;
 }
 
 // g++ binary_node.cpp -o ans && ./ans && rm -rf ./ans
