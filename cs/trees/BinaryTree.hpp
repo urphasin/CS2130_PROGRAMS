@@ -38,6 +38,9 @@ private:
     PostOrder(node->right);
     cout << node->data << " ";
   }
+
+  int heightOfTree(BinaryNode<T> *node) {}
+
 public:
   // Constructors
   BinaryTree(BinaryNode<T> *root) : root(root) {}
@@ -57,6 +60,11 @@ public:
   void PostOrder() {
     PostOrder(root);
     cout << endl;
+  }
+
+  // Find height of tree method
+  int heightOfTree() {
+    return heightOfTree(root);
   }
 
   // Delete node method
