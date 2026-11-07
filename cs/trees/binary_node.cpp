@@ -25,8 +25,6 @@ int main(){
   treeA.PreOrder();
   treeA.PostOrder();
   
-  // integer reference
-  int x = 0;
 }
 
 // g++ binary_node.cpp -o ans && ./ans && rm -rf ./ans
