@@ -2,7 +2,7 @@
 
 template <typename T>
 void printLCA(BinaryNode<T>* root, BinaryNode<T>* p, BinaryNode<T>* q) {
-  cout << BinaryTree<T>::LCA(root, p, q)->data << endl;
+  cout << BinaryTree<T>::LowestCommonAncestor(root, p, q)->data << endl;
 }
 
 int main() {
