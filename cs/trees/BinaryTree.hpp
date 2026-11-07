@@ -3,6 +3,8 @@
 using std::cout;
 using std::endl;
 
+
+
 template <typename T>
 struct BinaryNode {
   BinaryNode<T>* left;
@@ -13,8 +15,6 @@ struct BinaryNode {
   // Constructors
   BinaryNode(T value) : data(value), left(nullptr), right(nullptr) {}
 };
-
-
 template <typename T>
 class BinaryTree {
 private:
