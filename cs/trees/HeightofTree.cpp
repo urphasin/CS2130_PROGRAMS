@@ -16,13 +16,23 @@ int main() {
   BinaryNode<int> *node3 = new BinaryNode<int>(3);
   BinaryNode<int> *node4 = new BinaryNode<int>(4);
   BinaryNode<int> *node5 = new BinaryNode<int>(5);
+  BinaryNode<int> *node6 = new BinaryNode<int>(6);
+  BinaryNode<int> *node7 = new BinaryNode<int>(7);
+  BinaryNode<int> *node8 = new BinaryNode<int>(8);
 
   // Connect nodes
   root->left = node2;
   root->right = node3;
 
   node2->left = node4;
-  node2->right = node5;
+
+  node3->right = node7;
+
+  node4->right = node5;
+  
+  node5->left = node6;
+
+  node7->left = node8; 
 
   
   BinaryTree<int> tree1(root);
@@ -31,4 +41,4 @@ int main() {
   tree1.PostOrder();
 }
 
-// g++ balancedtree.cpp -o ans && ./ans && rm -rf ./ans
+// g++ HeightofTree.cpp -o ans && ./ans && rm -rf ./ans
