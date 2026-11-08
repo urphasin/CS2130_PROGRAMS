@@ -16,7 +16,7 @@ void print_1d_vec(const vector<int>& res) {
     cout << ")" << endl;
 }
 
-int main() {
+void check_left_neighbor() {
     vector<int> arr = { 10, 20, 30, 40 };
 
     for (int i = 0; i < arr.size(); i++) {
@@ -31,6 +31,10 @@ int main() {
     }
 
     print_1d_vec(arr);
+}
+
+int main() {
+    
 }
 
 // g++ bounds.cpp -o ans && ./ans && rm -rf ./ans
