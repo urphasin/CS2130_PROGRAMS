@@ -21,3 +21,5 @@ int main() {
         }
     }
 }
+
+// g++ bounds.cpp -o ans && ./ans && rm -rf ./ans
