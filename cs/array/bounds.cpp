@@ -19,17 +19,6 @@ void print_1d_vec(const vector<int>& res) {
 void check_left_neighbor() {
     vector<int> arr = { 40, 30, 20, 10 };
 
-    for (int i = 0; i < arr.size(); i++) {
-        for (int j = 0; j < arr.size(); j++) {
-            if (j + 1 < arr.size()) {
-                cout << "(" << arr[j] << ", " << arr[j + 1] << ")" << endl;
-                if (arr[j] > arr[j + 1]) {
-                    swap(arr, j, j + 1);
-                }
-            }
-        }
-    }
-
     print_1d_vec(arr);
 }
 
